@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
+%%%%%%%% BEGIN PREAMBLE %%%%%%%% \
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  \
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+%%% package imports %%%
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{mathptmx}% http://ctan.org/pkg/mathptmx
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+%%% layout settings %%%
+\geometry{left=0.7in, right=0.7in, top=20mm, bottom=20mm}
+\pagenumbering{gobble}
+\setlength\parindent{0pt}
+
+%%% new commands & environments %%%
+\newcommand{\I}{--}
+\newenvironment{mycenter}[1][\topsep]
+  {\setlength{\topsep}{#1}\par\kern\topsep\centering}% \begin{mycenter}[<len>]
+  {\par\kern\topsep}% \end{mycenter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  /
+%%%%%%%%% END PREAMBLE %%%%%%%%% /
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/
+
+\begin{document}
+
+\begin{mycenter}
+\textbf{\LARGE Kevin J. Murphy} \\
+Swarthmore College $\cdot$ 500 College Ave $\cdot$ Swarthmore, PA 19081 \\
+(484) 478-4880 $\cdot$ \href{mailto:kmurphy4@swarthmore.edu}{kmurphy4@swarthmore.edu} $\cdot$ \texttt{\href{https://github.com/keggsmurph21/}{https://github.com/keggsmurph21/}}
+
+\end{mycenter}
+
+\begin{mycenter}[0pt]
+\textsc{\textbf{EDUCATION}}
+\end{mycenter}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Swarthmore College}, Swarthmore, PA
+\begin{itemize}[topsep=0pt,noitemsep]
+  \item[\I] Current GPA: 3.7
+	\item[\I] Candidate for Bachelor of Arts in Honors Mathematics and Honors Minor Linguistics, May 2019
+	\item[\I] \textit{Relevant Coursework}: Algorithms, Natural Language Processing, Computer Systems, Data Structures \& Algorithms, Complex Analysis, Real Analysis, Modern Algebra, Honors Multivariable Calculus, Honors Linear Algebra, Geometry, Econometrics, Field Methods, Syntax, Semantics, Phonetics \& Phonology, Linguistic Typology
+	\item[\I] Member, Swarthmore Men's Soccer (Freshman -- Junior years, Centennial Conference Academic Honor Roll)
+	\item[\I] Member, Phi Psi Fraternity
+\end{itemize}
+
+\vspace{2mm}
+
+\begin{mycenter}[0pt]
+\textsc{\textbf{WORK EXPERIENCE}}
+\end{mycenter}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Google Summer of Code / Apertium}\\
+Software Development Intern \hfill April 2018 -- August 2018
+\begin{itemize}[topsep=0pt,noitemsep]
+  \item[\I] Redesigned and implemented an open source, in-browser, language-independent tool for annotating large collections of texts using JavaScript and SQLite3
+  \item[\I] Developed a server-side backend to facilitate the loading and storing of annotation data and UI preferences
+  \item[\I] Created a terminal tool for importing, exporting, and editing annotated corpora in multiple data formats
+  \item[\I] Presented to, and coordinated with, academic mentors at Swarthmore College and the National Research University Higher School of Economics in Moscow, Russia
+\end{itemize}
+
+\vspace{1mm}
+
+\textbf{Swarthmore College}, \textit{Swarthmore, PA} \\
+Lab Assistant, Laboratory for Endangered Languages Research and Documentation \hfill May 2017 -- present
+\begin{itemize}[topsep=0pt,noitemsep]
+	\item[\I] Worked with Professor K. David Harrison on various projects related to the Talking Dictionaries Project
+	\item[\I] Helped to develop a talking dictionary for several endangered language communities
+	\item[\I] Worked on website development, database management, AWS cloud hosting, transcription, and an interactive mapping interface
+\end{itemize}
+
+Information Technical Services Associate \hfill June 2016 -- September 2016
+\begin{itemize}[topsep=0pt,noitemsep]
+	\item[\I] Worked with students, faculty, and staff to solve issues related to the College's technical services over the phone and in person
+  \item[\I] Delivered and configured telephones, computers, and printers around campus in faculty offices and public areas
+\end{itemize}
+
+Math Department Tutor and \lq\lq{Pi-rate,}\rq\rq{ }\textit{Swarthmore, PA} \hfill September 2016 -- December 2017
+\begin{itemize}[topsep=0pt,noitemsep]
+	\item[\I] Tutored students in Multivariable Calculus, Linear Algebra, and Calculus
+	\item[\I] Held review sessions for Linear Algebra students twice a week in order to help those students learn the material and complete their coursework
+\end{itemize}
+
+Sports Information Student Worker \hfill September 2015 -- present
+\begin{itemize}[topsep=0pt,noitemsep]
+	\item[\I] Recorded statistics for men's/women's soccer, women's field hockey, and men's/women's basketball teams
+\end{itemize}
+
+\vspace{2mm}
+
+\begin{mycenter}[0pt]
+\textsc{\textbf{PERSONAL}}
+\end{mycenter}
+
+\rule{\textwidth}{0.4pt}
+
+\vspace{1.5mm}
+
+\begin{tabularx}{\linewidth}{ll}
+
+\hspace{-3mm}
+\textbf{Skills}: & Linux, macOS, Windows \\
+  & Proficient in JavaScript, Python, PHP, HTML \& CSS, \LaTeX, and Bash; previous experience with \\
+  & C++, C, SQL (SQLite3, PostgreSQL, MongoDB, MySQL), Stata, VBA, and TI-Basic \\
+  & AWS, Git, Docker, Heroku\\[1mm]
+
+\hspace{-3mm}
+\textbf{Interests}: & Playing music (guitar, ukulele, trumpet, piano); reading (critical theory, philosophy, history, \\
+ & postmodern fiction, South American literature); Settlers of Catan (see my \texttt{\href{http://catonline.murp.us/}{CatOnline}} site) \\[1mm]
+
+% \textbf{References}: & K. David Harrison, Ph.D.; Chair, Swarthmore College Linguistics Department \& Associate Provost for Educational Programs; (610) 690-5785 \\
+% & Jonathan N. Washington, Ph.D.; Assistant Professor, Swarthmore College Linguistics Department; (610) 957-6134
+\end{tabularx}
+
+\end{document}
