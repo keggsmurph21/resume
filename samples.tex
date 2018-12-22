@@ -1,0 +1,70 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
+%%%%%%%% BEGIN PREAMBLE %%%%%%%% \
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  \
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+%%% package imports %%%
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{mathptmx}% http://ctan.org/pkg/mathptmx
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+%%% layout settings %%%
+\geometry{left=0.7in, right=0.7in, top=20mm, bottom=20mm}
+\pagenumbering{gobble}
+\setlength\parindent{0pt}
+
+%%% new commands & environments %%%
+\newcommand{\I}{--}
+\newenvironment{mycenter}[1][\topsep]
+  {\setlength{\topsep}{#1}\par\kern\topsep\centering}% \begin{mycenter}[<len>]
+  {\par\kern\topsep}% \end{mycenter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  /
+%%%%%%%%% END PREAMBLE %%%%%%%%% /
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/
+
+\begin{document}
+
+\begin{mycenter}
+\textbf{\LARGE Kevin J. Murphy} \\
+Swarthmore College $\cdot$ 500 College Ave $\cdot$ Swarthmore, PA 19081 \\
+(484) 478-4880 $\cdot$ \href{mailto:kmurphy4@swarthmore.edu}{kmurphy4@swarthmore.edu} $\cdot$ \texttt{\href{https://github.com/keggsmurph21/}{https://github.com/keggsmurph21/}}
+
+\end{mycenter}
+
+{\textbf{Links to code samples}}
+
+\vspace{-3mm}
+\rule{\textwidth}{0.4pt}
+
+\begin{itemize}[topsep=0pt,noitemsep]
+  \item[\I] \href{https://github.com/keggsmurph21/catonline.git}{CatOnline: web server and game engine for Catan board game}
+  \item[\I] \href{https://github.com/jonorthwash/ud-annotatrix.git}{UD-Annotatrix: Online dependency parser editing tool}
+  \item[\I] \href{https://github.com/keggsmurph21/notatrix.git}{Notatrix: backend notational system for dependency parsing}
+  \item[\I] \href{https://github.com/keggsmurph21/notatrix-utils.git}{Notatrix-Utils: utilities for working with Notatrix}
+  \item[\I] \href{https://github.com/keggsmurph21/frambuesa.git}{Frambuesa: GroupMe bot for controlling music player}
+  \item[\I] \href{https://github.com/keggsmurph21/catext.git}{CaText: curses-based frontend for playing Catan in the command line}
+\end{itemize}
+
+\vspace{2mm}
+
+{\textbf{Links to course work}}
+
+\vspace{-3mm}
+\rule{\textwidth}{0.4pt}
+
+\begin{itemize}[topsep=0pt,noitemsep]
+  \item[\I] \href{https://github.com/keggsmurph21/swat/tree/master/math/}{Mathematics}
+  \item[\I] \href{https://github.com/keggsmurph21/swat/tree/master/cs/}{Computer science}
+  \item[\I] \href{https://github.com/keggsmurph21/swat/tree/master/ling/}{Linguistics}
+  \item[\I] \href{https://github.com/keggsmurph21/swat/tree/master/philosophy/}{Philosophy}
+\end{itemize}
+
+\vspace{2mm}
+
+\end{document}
